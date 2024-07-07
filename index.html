@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiperCar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!--    ICONS - https://boxicons.com/   -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <hr class="line1">
+        <div class="sub-nav">
+            <div class="header-left">
+                <h3>Entregas gratuitas acima de 5€</h3>
+            </div>
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" id="search-bar" placeholder="Pesquisar">
+                    <button id="clearSearch-bar" onclick="clearSearch()">x</button>
+                 </div>
+                 <i class='bx bx-user' id="login-icon"></i>
+                 <h3><a href="#login">Login</a></h3>
+            </div>
+        </div>
+    <hr class="line2">
+    <header>
+        <section class="nav">
+            <!--Logo do site-->
+            <i class='bx bxs-car' id="logo-icon"></i>
+            <a href="#" class="active">Hiper<span>Car</span></a>
+            <!--Nav list-->
+            <ul class="navbar">
+                <li><a href="#pecas">Peças</a></li>
+                <li><a href="#sobrenos">Sobre nós</a></li>
+                <li><a href="#novidades">Novidades</a></li>
+            </ul>
+        </section>
+    </header>
+    <div class="timer">
+        <h4>Só para após a sua marcação conosco!</h3>
+        <div id="timer">00:00:00</div> <br> <br>
+    </div>
+        <!--Texto-->
+    <section class="hipercar container">
+        <div class="hipercar-text">
+            
+            <h3>Confira os nossos preços.</h3>
+            <h1>Melhore o seu carro, <br>conosco!</h1>
+        </div>
+            <div class="button-container">
+                
+                <!--Comprar button-->
+                <a href="#" class="btn">Comprar</a>
+                <button id="toggle-theme">Tema alternativo</button>
+            </div> 
+    </section>
+
+    <section class="pecas" id="pecas">
+        <div class="pecas-text">
+            <h3>Qualidade preço, barato e maravilha.</h3>
+            <!--Comprar pecas button-->
+            <a href="#" class="pecas-btn">Comprar Peças</a>
+        </div>
+    </section>
+    
+    <section class="pecas-main-boxes">
+        <!--Box 1-->
+        <div class="box-pecas">
+            <img src="fotos/Aros e pneus.webp" alt="">
+            <h3>Aros e pneus</h3>
+        </div>
+        <!--box 2-->
+        <div class="box-pecas">
+            <img src="fotos/motor.webp" alt="">
+            <h3>Motores</h3>
+        </div>
+        <!--box 3-->
+        <div class="box-pecas">
+            <img src="fotos/Partes do carro.webp" alt="">
+            <h3>Partes do carro</h3>
+        </div>
+        <!--box 4-->
+        <div class="box-pecas">
+            <img src="fotos/Acessorios.webp" alt="">
+            <h3>Acessórios</h3>
+        </div>
+    </section>
+
+    
+    <section class="sobrenos" id="sobrenos">
+        <div class="sobrenos-img">
+                <img src="fotos/oficina_carro.jpg" alt="">
+            </div>
+
+        <div class="sobrenos-text">
+            <h2>Saiba mais sobre <br>"A Melhor Oficina de Automóveis"</h2>
+            <p>Localização, encomendas e outras informações clique no botão abaixo.</p>
+            <!--About button-->
+            <a href="#" class="btn">Saber mais</a>
+        </div>
+    </section>
+
+    <section class="novidades" id="novidades">
+        <div class="novidades-text">
+            <h2>Novidades</h2>
+        </div>
+            <!--Box 1-->
+            <div class="box">
+                <img src="fotos/imagem1ProjetoPneus.webp" alt="">
+                <span>Fev 25 2023</span>
+                <h3>"Nome do novo produto"</h3>
+                <p>Descrição do produto...</p>
+                <a href="#" class="novidades-btn">Saber mais<i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+            <!--Box 2-->
+            <div class="box">
+                <img src="fotos/imagem2ProjetoPneus.webp" alt="">
+                <span>Jan 07 2024</span>
+                <h3>"Nome do novo produto"</h3>
+                <p>Descrição do produto...</p>
+                <a href="#" class="novidades-btn">Saber mais<i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+            <!--Box 3-->
+            <div class="box">
+                <img src="fotos/imagem3ProjetoPneus.webp" alt="">
+                <span>Dez 19 2023</span>
+                <h3>"Nome do novo produto"</h3>
+                <p>Descrição do produto...</p>
+                <a href="#" class="novidades-btn">Saber mais<i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+    </section>
+
+        <!--NEW SECTION - COMENTS-->
+
+        <section class="comentarios" id="comentarios">
+            <div class="comentarios-container container">
+                <h2>Comentários</h2>
+                <form id="comentarios-form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    
+                    <label for="comentario">Comentário:</label>
+                    <textarea id="comentario" name="comentario" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="comentarios-lista"></div>
+            </div>
+        </section>
+
+            <!--Footer-->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">Hiper<span>Car</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Página</h3>
+                <a href="#pecas">Peças</a>
+                <a href="#sobrenos">Sobre nós</a>
+                <a href="#no">Novidades</a>
+            </div>
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacidade</a>
+                <a href="#">Devoluções</a>
+                <a href="#">Política de Cookies</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>Portugal</p>
+            </div>
+        </div>
+    </section>
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; HiperCar All Rights Reserved</p>
+    </div>
+    
+</body>
+</html>
+
